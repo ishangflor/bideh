@@ -1,0 +1,521 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Can't Help Falling in Love with You</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="botanical-effects" aria-hidden="true"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+        <div class="brand">little things, kept forever <span>♡</span></div>
+        <div class="header-right">A JOURNAL FOR KRISTELLE · BEST WITH LOVE</div>
+    </header>
+
+    <main>
+
+        <!-- COVER -->
+        <section id="cover" class="screen active">
+            <div class="intro-note">a little something for you, palangga ♡</div>
+
+            <div class="music-player">
+                <div class="record-disc">
+                    <span>♫</span>
+                </div>
+
+                <div class="music-details">
+                    <span class="music-kicker">A LITTLE MUSIC FOR YOU</span>
+                    <strong>Can't Help Falling in Love</strong>
+                    <small>instrumental version · ♡</small>
+                    <span id="musicStatus">ready when you are...</span>
+                </div>
+
+                <button
+                    type="button"
+                    class="music-toggle"
+                    id="musicToggle"
+                    onclick="toggleMusic()"
+                    aria-label="Play music"
+                    aria-pressed="false"
+                >
+                    <span id="musicIcon">▶</span>
+                    <span id="musicButtonText">Play</span>
+                </button>
+                <audio id="backgroundMusic" src="https://ishangflor.github.io/bodeh/music/Can't%20Help%20Falling%20in%20Love.mp3" loop preload="none"></audio><audio id="backgroundMusic" src="music/Can't Help Falling in Love.mp3" loop preload="none"></audio>
+            </div>
+
+            <div class="book cover-book">
+                <div class="book-spine"></div>
+
+                <article class="paper cover-left">
+                    <span class="paper-number">01</span>
+                    <div class="cover-postmark">A LITTLE<br>LOVE NOTE<br><span>♡</span></div>
+                    <div class="cover-flower flower-drawing">✿</div>
+                    <p class="hand cover-small">collected moments,</p>
+                    <h1>Can't Help<br><em>Falling in Love</em><br>with You</h1>
+                    <div class="cover-rule">— ✧ —</div>
+                    <p class="cover-byline">a scrapbook of us</p>
+                    <p class="cover-date">made especially for Kristelle</p>
+                    <div class="cover-sticker">YOU<br>ARE MY<br>SUNSHINE</div>
+                    <div class="cover-tape tape-a"></div>
+                    <div class="cover-tape tape-b"></div>
+                </article>
+
+                <article class="paper cover-right">
+                    <div class="cover-photo photo-frame">
+                        <img src="images/photo1.jpg" alt="A favorite photo of us">
+                        <span class="photo-fallback">put your<br>favorite photo<br>here ♡</span>
+                    </div>
+
+                    <div class="cover-caption handwritten">my favorite person<br>in my favorite story.</div>
+
+                    <div class="postcard">
+                        <div class="postcard-top">POSTCARD FROM MY HEART</div>
+                        <p>To: Kristelle</p>
+                        <p>From: your person</p>
+                        <div class="postcard-stamp">LOVE<br>♡</div>
+                    </div>
+
+                    <div class="pressed-flowers">
+                        <span>✿</span><span>❀</span><span>✿</span>
+                    </div>
+
+                    <button class="turn-button cover-open" onclick="goTo('story')">
+                        Open our journal <span>↗</span>
+                    </button>
+
+                    <div class="corner-note">turn the page, love</div>
+                </article>
+            </div>
+
+            <p class="outside-caption">a story made of little moments and a whole lot of love</p>
+        </section>
+
+        <!-- CHAPTER 1 -->
+        <section id="story" class="screen">
+            <div class="chapter-heading">
+                <span>CHAPTER I</span>
+                <p class="hand">where it all began</p>
+            </div>
+
+            <div class="book spread">
+                <div class="book-spine"></div>
+
+                <article class="paper page-left">
+                    <span class="page-label">OUR BEGINNING · PAGE 02</span>
+                    <div class="washi washi-pink"></div>
+
+                    <div class="small-polaroid tilted-left">
+                        <div class="photo-slot">
+                            <img src="images/photo2.jpg" alt="A memory together">
+                            <span class="photo-fallback">a memory<br>goes here</span>
+                        </div>
+                        <p>back when it all started ♡</p>
+                    </div>
+
+                    <div class="ticket">
+                        <span>ADMIT ONE</span>
+                        <strong>TO OUR STORY</strong>
+                        <small>one lovely beginning</small>
+                        <b>♡</b>
+                    </div>
+
+                    <div class="flower-stamp">✿</div>
+                    <p class="margin-writing">some things<br>are meant<br>to happen.</p>
+
+                    <div class="torn-note">
+                        <p class="hand">the beginning...</p>
+                        <p>Grade 11. Same classroom. Same circle of friends. And a story neither of us knew was waiting for us.</p>
+                    </div>
+                </article>
+
+                <article class="paper page-right">
+                    <span class="page-label">A NOTE TO MY FAVORITE PERSON</span>
+                    <div class="tape tape-top"></div>
+
+                    <p class="hand letter-greeting">dear palangga,</p>
+                    <h2>Who would've<br>thought it would<br>be us?</h2>
+
+                    <div class="journal-lines">
+                        <p>We started as classmates, then became friends. Somewhere between all the conversations, shared laughs, and ordinary school days, you became someone I quietly looked forward to.</p>
+
+                        <p>I liked you for almost two years before we got here. I kept those feelings to myself, but you still found your way into so many of my thoughts.</p>
+
+                        <p>And now, I get to call you my person. From being in the same friend circle to creating a little world of our own, I'm so glad our paths crossed.</p>
+                    </div>
+
+                    <p class="hand page-signature">I'm glad it was you. ♡</p>
+                    <div class="tiny-heart">♡</div>
+                </article>
+            </div>
+
+            <div class="navigation-row">
+                <button class="text-button" onclick="goTo('cover')">← cover</button>
+                <span class="spread-counter">02 — 06</span>
+                <button class="turn-button" onclick="goTo('timeline')">Next spread ↗</button>
+            </div>
+        </section>
+
+        <!-- CHAPTER 2 -->
+        <section id="timeline" class="screen">
+            <div class="chapter-heading">
+                <span>CHAPTER II</span>
+                <p class="hand">dates I want to keep</p>
+            </div>
+
+            <div class="book spread">
+                <div class="book-spine"></div>
+
+                <article class="paper page-left timeline-left">
+                    <span class="page-label">A FEW PAGES FROM OUR STORY</span>
+                    <h2 class="spread-title">Little moments,<br><em>big feelings.</em></h2>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-dot">✿</span>
+                        <div>
+                            <small>GRADE 11</small>
+                            <h3>First, we were classmates</h3>
+                            <p>Just two people sharing a classroom, not knowing what the future had planned.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-dot">♡</span>
+                        <div>
+                            <small>THE FRIENDSHIP DAYS</small>
+                            <h3>Then, we became friends</h3>
+                            <p>Conversations, inside jokes, and little moments that became special without us noticing.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-entry">
+                        <span class="timeline-dot">✧</span>
+                        <div>
+                            <small>THE QUIET CRUSH</small>
+                            <h3>A feeling I kept close</h3>
+                            <p>Almost two years of admiring you and finding little reasons to smile.</p>
+                        </div>
+                    </div>
+
+                    <div class="date-stamp">KEPT<br>WITH<br>LOVE</div>
+                    <div class="washi washi-green"></div>
+                </article>
+
+                <article class="paper page-right timeline-right">
+                    <span class="page-label">THE DAY OUR STORY CHANGED</span>
+
+                    <div class="calendar-card">
+                        <div class="calendar-top">A DAY TO REMEMBER</div>
+                        <div class="calendar-month">DECEMBER</div>
+                        <div class="calendar-day">01</div>
+                        <div class="calendar-year">THE DAY WE BECAME US</div>
+                        <div class="calendar-heart">♡</div>
+                    </div>
+
+                    <div class="timeline-entry final-entry">
+                        <span class="timeline-dot">♡</span>
+                        <div>
+                            <small>EVERY DAY SINCE</small>
+                            <h3>Still choosing you</h3>
+                            <p>Not only on special dates, but in the quiet, ordinary moments too. I hope we get to keep making them.</p>
+                        </div>
+                    </div>
+
+                    <div class="scrap-caption hand">our favorite chapter<br>is still being written...</div>
+                    <div class="postmark-round">OURS<br>FOREVER<br>♡</div>
+                </article>
+            </div>
+
+            <div class="navigation-row">
+                <button class="text-button" onclick="goTo('story')">← previous</button>
+                <span class="spread-counter">03 — 06</span>
+                <button class="turn-button" onclick="goTo('memories')">Next spread ↗</button>
+            </div>
+        </section>
+
+        <!-- CHAPTER 3 -->
+        <section id="memories" class="screen">
+            <div class="chapter-heading">
+                <span>CHAPTER III</span>
+                <p class="hand">photographs & other treasures</p>
+            </div>
+
+            <div class="book spread">
+                <div class="book-spine"></div>
+
+                <article class="paper page-left gallery-left">
+                    <span class="page-label">A COLLECTION OF US · 04</span>
+                    <h2 class="spread-title">Moments worth<br><em>keeping.</em></h2>
+
+                    <div class="photo-cluster">
+                        <div class="gallery-photo gallery-photo-one">
+                            <div class="photo-slot">
+                                <img src="images/photo1.jpg" alt="Memory one">
+                                <span class="photo-fallback">photo 01</span>
+                            </div>
+                            <p>my favorite view</p>
+                        </div>
+
+                        <div class="gallery-photo gallery-photo-two">
+                            <div class="photo-slot">
+                                <img src="images/photo2.jpg" alt="Memory two">
+                                <span class="photo-fallback">photo 02</span>
+                            </div>
+                            <p>one for the books</p>
+                        </div>
+
+                        <div class="gallery-photo gallery-photo-three">
+                            <div class="photo-slot">
+                                <img src="images/photo3.jpg" alt="Memory three">
+                                <span class="photo-fallback">photo 03</span>
+                            </div>
+                            <p>my happy place</p>
+                        </div>
+                    </div>
+
+                    <div class="tiny-note note-under-photo">little moments, big happiness ♡</div>
+                    <div class="pressed-flowers gallery-flowers">✿ ❀</div>
+                </article>
+
+                <article class="paper page-right gallery-right">
+                    <span class="page-label">SAVED IN MY HEART</span>
+
+                    <div class="large-photo">
+                        <div class="photo-slot">
+                            <img src="images/photo4.jpg" alt="A favorite photo">
+                            <span class="photo-fallback">add a favorite<br>photo here ♡</span>
+                        </div>
+                        <p>this one deserves its own page.</p>
+                    </div>
+
+                    <div class="mini-photo-row">
+                        <div class="mini-photo">
+                            <div class="photo-slot">
+                                <img src="images/photo5.jpg" alt="Extra memory one">
+                                <span class="photo-fallback">♡</span>
+                            </div>
+                        </div>
+
+                        <div class="mini-photo">
+                            <div class="photo-slot">
+                                <img src="images/photo6.jpg" alt="Extra memory two">
+                                <span class="photo-fallback">✿</span>
+                            </div>
+                        </div>
+
+                        <div class="mini-photo">
+                            <div class="photo-slot">
+                                <img src="images/photo7.jpg" alt="Extra memory three">
+                                <span class="photo-fallback">♡</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hand gallery-quote">"Even the simplest moments become special when they're with you."</div>
+                    <div class="paper-clip">⌇</div>
+                </article>
+            </div>
+
+            <div class="navigation-row">
+                <button class="text-button" onclick="goTo('timeline')">← previous</button>
+                <span class="spread-counter">04 — 06</span>
+                <button class="turn-button" onclick="goTo('love')">Next spread ↗</button>
+            </div>
+        </section>
+
+        <!-- CHAPTER 4 -->
+        <section id="love" class="screen">
+            <div class="chapter-heading">
+                <span>CHAPTER IV</span>
+                <p class="hand">things I never want to forget</p>
+            </div>
+
+            <div class="book spread">
+                <div class="book-spine"></div>
+
+                <article class="paper page-left">
+                    <span class="page-label">A LIST THAT COULD GO ON FOREVER</span>
+                    <h2 class="spread-title">Little things<br><em>I love about you.</em></h2>
+
+                    <div class="love-list">
+                        <div><b>01</b><span>Your kindness, even in the little things.</span></div>
+                        <div><b>02</b><span>Your smile that makes an ordinary day better.</span></div>
+                        <div><b>03</b><span>The way you make people feel cared for.</span></div>
+                        <div><b>04</b><span>Your curly hair and all its charm.</span></div>
+                        <div><b>05</b><span>Your laugh and the happiness behind it.</span></div>
+                        <div><b>06</b><span>The way you understand me.</span></div>
+                    </div>
+
+                    <div class="washi washi-pink list-tape"></div>
+                    <div class="tiny-note list-side-note">all these little things<br>make you, you ♡</div>
+                </article>
+
+                <article class="paper page-right">
+                    <span class="page-label">AND A FEW MORE REASONS...</span>
+
+                    <div class="love-list second-list">
+                        <div><b>07</b><span>Your little habits that make you, you.</span></div>
+                        <div><b>08</b><span>How you keep being yourself.</span></div>
+                        <div><b>09</b><span>The comfort of simply talking to you.</span></div>
+                        <div><b>10</b><span>The way you make love feel gentle.</span></div>
+                        <div><b>11</b><span>Your patience, even on difficult days.</span></div>
+                        <div><b>12</b><span>All the little things I still get to discover.</span></div>
+                    </div>
+
+                    <div class="big-scrap-quote">
+                        <span>♡</span>
+                        <p class="hand">and if I had to choose again...</p>
+                        <h3>I'd still choose you.</h3>
+                    </div>
+
+                    <div class="flower-stamp love-flower">❀</div>
+                </article>
+            </div>
+
+            <div class="navigation-row">
+                <button class="text-button" onclick="goTo('memories')">← previous</button>
+                <span class="spread-counter">05 — 06</span>
+                <button class="turn-button" onclick="goTo('future')">Next spread ↗</button>
+            </div>
+        </section>
+
+        <!-- CHAPTER 5 -->
+        <section id="future" class="screen">
+            <div class="chapter-heading">
+                <span>CHAPTER V</span>
+                <p class="hand">a little daydream of ours</p>
+            </div>
+
+            <div class="book spread">
+                <div class="book-spine"></div>
+
+                <article class="paper page-left future-left">
+                    <span class="page-label">SOMEDAY, SOMEWHERE</span>
+                    <h2 class="spread-title">Our little<br><em>green house.</em></h2>
+
+                    <div class="house-art">
+                        <div class="art-sun">☼</div>
+                        <div class="art-cloud cloud-a">☁</div>
+                        <div class="art-cloud cloud-b">☁</div>
+                        <div class="art-house-roof"></div>
+                        <div class="art-house-body">
+                            <div class="art-window"></div>
+                            <div class="art-door"></div>
+                        </div>
+                        <div class="art-ground"></div>
+                        <span class="art-flower f-one">✿</span>
+                        <span class="art-flower f-two">❀</span>
+                        <span class="art-flower f-three">✿</span>
+                        <span class="art-tree">♣</span>
+                    </div>
+
+                    <div class="hand future-caption">a home filled with slow mornings,<br>flowers, and love.</div>
+                    <div class="tiny-note someday-note">our someday ♡</div>
+                </article>
+
+                <article class="paper page-right future-right">
+                    <span class="page-label">A LETTER TO OUR FUTURE SELVES</span>
+                    <div class="washi washi-green"></div>
+
+                    <p class="hand letter-greeting">dear future us,</p>
+                    <h2>Let's keep<br>dreaming.</h2>
+
+                    <div class="journal-lines">
+                        <p>I hope we get our little green house someday. A place with a garden, flowers, animals, and a little barn. A home that feels peaceful just because we're in it.</p>
+
+                        <p>I hope we get to enjoy slow mornings, make ordinary memories, laugh over silly things, and celebrate all the small wins together.</p>
+
+                        <p>I don't need every day to be perfect. I just hope we keep learning, growing, and choosing each other through all the seasons of life.</p>
+                    </div>
+
+                    <p class="hand page-signature">until then, let's keep dreaming ♡</p>
+                    <div class="postmark-round future-stamp">TO OUR<br>FUTURE<br>♡</div>
+                </article>
+            </div>
+
+            <div class="navigation-row">
+                <button class="text-button" onclick="goTo('love')">← previous</button>
+                <span class="spread-counter">06 — 06</span>
+                <button class="turn-button" onclick="goTo('birthday')">One last letter ↗</button>
+            </div>
+        </section>
+
+        <!-- BIRTHDAY LETTER -->
+        <section id="birthday" class="screen birthday-screen">
+            <div class="chapter-heading">
+                <span>JUST FOR YOU</span>
+                <p class="hand">the most important page</p>
+            </div>
+
+            <div class="birthday-book">
+                <div class="birthday-paper">
+                    <div class="birthday-top-decoration">✿ &nbsp; ♡ &nbsp; ✿</div>
+                    <p class="hand">today is all about you...</p>
+                    <h2>Happy Birthday,<br><em>Kristelle!</em></h2>
+                    <p class="birthday-intro">I wish I could be there to celebrate with you. Until then, I made you a little something.</p>
+
+                    <div class="envelope-area">
+                        <div class="envelope" id="envelope">
+                            <div class="envelope-letter">
+                                <span>♡</span>
+                                <p class="hand">a letter for you</p>
+                            </div>
+                            <div class="envelope-back"></div>
+                            <div class="envelope-front"></div>
+                            <div class="envelope-flap"></div>
+                            <div class="envelope-seal">♡</div>
+                        </div>
+                    </div>
+
+                    <button class="turn-button" id="openLetterButton" onclick="openLetter()">Open your letter ♡</button>
+                    <p class="envelope-hint">tap to open your little letter</p>
+                </div>
+            </div>
+
+            <article class="birthday-letter" id="birthdayLetter">
+                <div class="letter-sheet">
+                    <div class="letter-washi"></div>
+                    <span class="page-label">A LETTER, WRITTEN JUST FOR YOU</span>
+
+                    <p class="hand">to my dearest Kristelle,</p>
+                    <h3>Happy birthday, palangga nako!</h3>
+
+                    <p>I wish I could be there beside you today, celebrating and making more memories with you. Even though I can't be there in person, I hope this little surprise reminds you how loved and appreciated you are.</p>
+
+                    <p>Thank you for being part of my life. Thank you for your patience, your understanding, your kindness, and for all the little ways you make my days better. I hope this new chapter brings you happiness, peace, new experiences, and all the good things your heart has been wishing for.</p>
+
+                    <p>Please never forget that you don't have to be anything other than yourself to be loved. I appreciate you for who you are, even on the days when you don't feel your best.</p>
+
+                    <p>I hope we get to celebrate many more birthdays together, make more memories, and someday look back at this little scrapbook with happy hearts.</p>
+
+                    <p>Enjoy your day, my love. You deserve to feel celebrated, today and every day.</p>
+
+                    <div class="letter-signoff">
+                        <span class="hand">with all my love,</span>
+                        <strong>your person ♡</strong>
+                    </div>
+                </div>
+
+                <button class="turn-button" onclick="restartJournal()">Read our journal again ↺</button>
+            </article>
+
+            <p class="birthday-footer">made with love, just for you ♡</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
